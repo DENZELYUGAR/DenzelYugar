@@ -1,0 +1,12 @@
+body {
+    background: linear-gradient(to bottom, 
+        #f3c6c6, /* Rosa claro */
+        #fbd5d8, /* Rosa pálido */
+        #e3b3f3/* Amarillo dorado pálido *//* Color dorado claro */
+    );
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start; /* Alinea el contenido al inicio */
+    justify-content: flex-start; /* Alinea el contenido al inicio */
+}
