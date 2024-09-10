@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "Lobster";
+    src: url("fonts/Lobster/Lobster-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Crimson_text";
+    src: url("fonts/Crimson_Text/CrimsonText-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("fonts/Raleway/static/Raleway-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
