@@ -121,7 +121,7 @@ section{
 }
 
 .main-container .image{
-    width: 1000px;
+    width: 500px;
     height: 80vh;
     border-radius: 100%;
     overflow: hidden;
@@ -176,7 +176,7 @@ section{
 
 .content p{
     font-size: clamp(0.4rem, 0.2rem + 9vw, 1rem);
-    margin 10px 0;
+    margin: 10px 0;
 }
 
 .social-links i{
@@ -212,7 +212,7 @@ section{
     font-size: 120%;
     font-weight: 700;
     border-radius: 5px;
-    transition: 0.2s linear;
+    transition: transform 0.2s linear, background-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear;
 }
 
 .content button:hover{
@@ -224,8 +224,8 @@ section{
     box-shadow: 0 0 40px #F9E79F;
 }
 
-@media (max-width:884px) {
-    nav.logo{
+@media (max-width:884px){
+    nav .logo{
         position: absolute;
         top: 16px;
         left: 15px;
