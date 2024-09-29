@@ -8,12 +8,9 @@ function cancel(){
     navbar.style.transform = "translateY(-500px)"
 }
 
-// Typewriter Effect
-
 const texts = [
-    "DEVELOPER",
-    "DESIGNER",
-    "YOUTUBER"
+    "Developer",
+    "Tester"
 ]
 
 let speed  =100;
