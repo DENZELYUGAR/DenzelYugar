@@ -112,7 +112,7 @@ nav {
     color: #F9E79F;
     text-decoration: none;
     justify-content: center;
-    padding: 20px 0; /* Aumentar el padding para un área de clic más grande */
+    padding: 20px 0; 
     align-items: center;
     transition: 0.2s linear;
 }
@@ -139,17 +139,25 @@ section {
     height: 500px;
     border-radius: 20%;
     overflow: hidden;
-    box-shadow: 0 0 50px #E67E22;
+    margin-left: 160px;
+    border: 4px solid #E67E22;
 }
 
 .main-container .image img {
     width: 100%;
-    height: 100%;
+    height: auto;
+    display: block;
     object-fit: cover;
 }
 
 .main-container .image:hover {
     animation: animate 1.5s ease-in-out infinite;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center; 
+    margin-top: auto; 
 }
 
 @keyframes animate {
@@ -268,7 +276,3 @@ section {
     }
 }
 
-
-* {
-    transition: all 0.3s ease;
-}
