@@ -8,13 +8,14 @@ function cancel(){
     navbar.style.transform = "translateY(-500px)"
 }
 
-const texts = [
-    "Developer",
-    "Tester"
-]
+
 
 let speed  =100;
 const textElements = document.querySelector(".typewriter-text");
+
+if (textElements) {
+    window.onload = typeWriter;
+}
 
 let textIndex = 0;
 let charcterIndex = 0;
