@@ -43,6 +43,9 @@ nav {
 .hamburg,
 .cancel {
     cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 10px;
     color: #F9E79F;
     display: none;
     font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
@@ -52,7 +55,7 @@ nav {
     display: flex;
 }
 
-.nav-container .links a {
+.nav-container .links a{
     position: relative;
     font-size: 1.2rem;
     color: #F9E79F;
@@ -97,11 +100,7 @@ nav {
     height: auto;
     backdrop-filter: blur(4px) brightness(40%);
     box-shadow: 0 0 20px black;
-    transition: transform 0.3s ease;
-}
-
-.dropdown.show {
-    transform: translateY(0);
+    transition: 0.2s linear;
 }
 
 .dropdown .links a {
@@ -109,7 +108,7 @@ nav {
     color: #F9E79F;
     text-decoration: none;
     justify-content: center;
-    padding: 20px 0; 
+    padding: 15px 0; 
     align-items: center;
     transition: 0.2s linear;
 }
@@ -117,6 +116,7 @@ nav {
 .dropdown .links a:hover {
     background-color: #E67E22;
 }
+
 
 section {
     width: 100%;
@@ -145,6 +145,34 @@ section {
     color: #F9E79F; 
 }
 
+@media (max-width: 884px) {
+    nav .logo {
+        position: absolute;
+        top: 16px;
+        left: 15px;
+        font-size: 1.5rem;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-container .links {
+        display: none;
+    }
+
+    .hamburg,
+    .cancel {
+        display: block;
+    }
+
+    .skills-container {
+        width: 80%; 
+    }
+
+}
+
 @media (max-width: 440px) {
     .skills-container {
         width: 90%; 
@@ -156,24 +184,5 @@ section {
 
     .skills-container p {
         font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 884px) {
-    .nav-container .links {
-        display: none; /* Mantener oculto inicialmente */
-    }
-
-    .dropdown.show {
-        display: flex; /* Muestra el menú cuando se activa */
-        flex-direction: column; /* Coloca los enlaces en columna */
-    }
-
-    .hamburg {
-        display: block; /* Asegúrate de que el icono hamburguesa esté visible */
-    }
-
-    .dropdown {
-        display: none; /* Asegúrate de que la lista desplegable no esté visible inicialmente */
     }
 }
